@@ -66,7 +66,7 @@ export const InstagramGalleryFooter: React.FC = () => {
               <InstagramIcon className="w-4 h-4" />
             </div>
             <span className="text-sm font-extrabold text-[#16352D] tracking-tight">
-              tasty_daily
+              mercado_daily
             </span>
           </a>
         </div>
@@ -82,12 +82,12 @@ export const InstagramGalleryFooter: React.FC = () => {
                 <Sparkles className="w-5 h-5 text-white" />
               </div>
               <span className="text-2xl font-black text-white">
-                Tasty <span className="text-[#F6B86E]">Daily</span>
+                Mercado <span className="text-[#F6B86E]">Daily</span>
               </span>
             </div>
 
             <p className="text-emerald-100/75 text-xs sm:text-sm leading-relaxed max-w-md">
-              We're Tasty Daily Shop, an innovative team of food engineers. Our unique model minimizes fresh food handling by up to 85%, sourcing locally and dispatching within 6 hours through cold-chain logistics in eco-friendly containers.
+              We're Mercado Daily Shop, an innovative team of food engineers. Our unique model minimizes fresh food handling by up to 85%, sourcing locally and dispatching within 6 hours through cold-chain logistics in eco-friendly containers.
             </p>
 
             {/* Social Icons */}
@@ -107,7 +107,7 @@ export const InstagramGalleryFooter: React.FC = () => {
             </div>
 
             <p className="text-[11px] text-emerald-200/60 font-semibold pt-4">
-              © 2026 Tasty Daily Grocery WordPress Theme. All rights reserved.
+              © 2026 Mercado Daily Organic Grocery Store. All rights reserved.
             </p>
           </div>
 

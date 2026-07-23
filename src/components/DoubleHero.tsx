@@ -53,7 +53,7 @@ export const DoubleHero: React.FC<DoubleHeroProps> = ({ onShopNow }) => {
           {/* Typography Content */}
           <div className="relative z-10 max-w-xs sm:max-w-sm space-y-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#16352D] leading-[1.1] tracking-tight">
-              Tasty Vegetables from Farm Vendors
+              Fresh Vegetables from Farm Vendors
             </h2>
             <p className="text-sm sm:text-base font-semibold text-[#16352D]/80 leading-relaxed">
               Every Fridays check Best Market Deals!
@@ -78,7 +78,7 @@ export const DoubleHero: React.FC<DoubleHeroProps> = ({ onShopNow }) => {
           >
             <img
               src={getImageUrl('/images/hero_veggies_crate_1784805543395.png')}
-              alt="Tasty Cartoon Vegetables Crate"
+              alt="Mercado Cartoon Vegetables Crate"
               className="w-full h-auto drop-shadow-2xl object-contain animate-float-gentle"
             />
           </div>

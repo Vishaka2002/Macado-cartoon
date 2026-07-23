@@ -161,7 +161,7 @@ export const PROMO_BANNERS = [
   },
   {
     id: 'promo-4',
-    title: 'Tasty Organic Herbs & Greens!',
+    title: 'Fresh Organic Herbs & Greens!',
     tag: 'Discount',
     date: 'From 1 May, 2026 00:00 AM',
     bg: 'from-lime-400 to-green-600',

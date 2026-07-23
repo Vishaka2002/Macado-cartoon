@@ -106,7 +106,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
           <div>
             <div className="text-2xl font-black tracking-tight text-white flex items-center gap-1">
-              Tasty <span className="text-[#F6B86E]">Daily</span>
+              Mercado <span className="text-[#F6B86E]">Daily</span>
             </div>
             <div className="text-[10px] tracking-widest uppercase text-emerald-300 font-bold">
               3D Cartoon Organic Market

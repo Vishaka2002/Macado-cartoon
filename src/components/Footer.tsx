@@ -42,7 +42,7 @@ export const Footer: React.FC = () => {
               <div className="w-10 h-10 bg-gradient-to-br from-[#F76B5D] to-[#F6B86E] rounded-xl flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-black text-white">Tasty <span className="text-[#F6B86E]">Daily</span></span>
+              <span className="text-xl font-black text-white">Mercado <span className="text-[#F6B86E]">Daily</span></span>
             </div>
             <p className="text-emerald-200/80 leading-relaxed">
               Your premium 3D cartoon organic grocery store bringing farm-fresh vegetables, juicy fruits, bakery, and meats straight to your home with love.
