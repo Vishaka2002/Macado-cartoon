@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { Product } from '../data/products';
 import { ShoppingCart, Heart, Eye, Flame } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 
 interface BigSalesTodayProps {
@@ -132,7 +133,7 @@ export const BigSalesToday: React.FC<BigSalesTodayProps> = ({
                 {/* Floating Product Image */}
                 <div className="w-full h-48 flex items-center justify-center py-4">
                   <img
-                    src={product.image}
+                    src={getImageUrl(product.image)}
                     alt={product.name}
                     className="max-h-40 w-auto object-contain drop-shadow-lg group-hover:scale-110 group-hover:rotate-1 transition-transform duration-500"
                   />

@@ -85,9 +85,9 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Right contact details */}
           <div className="flex items-center gap-4 text-emerald-200">
-            <a href="mailto:info@marcado-daily.com" className="flex items-center gap-1.5 hover:text-white transition">
+            <a href="mailto:info@mercado-daily.com" className="flex items-center gap-1.5 hover:text-white transition">
               <Mail className="w-3.5 h-3.5 text-emerald-400" />
-              <span className="hidden sm:inline">info@marcado-daily.com</span>
+              <span className="hidden sm:inline">info@mercado-daily.com</span>
             </a>
             <a href="tel:+1900777525" className="flex items-center gap-1.5 hover:text-white transition">
               <Phone className="w-3.5 h-3.5 text-emerald-400" />

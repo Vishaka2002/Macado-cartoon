@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { PROMO_BANNERS } from '../data/products';
 import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 export const PromotionsCarousel: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -60,7 +61,7 @@ export const PromotionsCarousel: React.FC = () => {
               </span>
 
               <img
-                src={promo.image}
+                src={getImageUrl(promo.image)}
                 alt={promo.title}
                 className="max-h-36 w-auto object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500"
               />

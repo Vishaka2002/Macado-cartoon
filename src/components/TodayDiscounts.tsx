@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Product } from '../data/products';
 import { Eye, Heart, ShoppingCart, ArrowRight } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 
 interface TodayDiscountsProps {
@@ -54,7 +55,7 @@ export const TodayDiscounts: React.FC<TodayDiscountsProps> = ({
             {/* 3D Pixar Shopping Family Illustration */}
             <div className="relative py-4 flex justify-center">
               <img
-                src="/images/shopping_family_1784805574177.png"
+                src={getImageUrl('/images/shopping_family_1784805574177.png')}
                 alt="3D Cartoon Shopping Family"
                 className="w-full max-w-[260px] h-auto object-contain drop-shadow-xl animate-float-gentle group-hover:scale-105 transition-transform duration-500"
               />
@@ -139,7 +140,7 @@ export const TodayDiscounts: React.FC<TodayDiscountsProps> = ({
                   {/* Product 3D Pixar Illustration Image */}
                   <div className="w-full h-44 flex items-center justify-center py-2 overflow-hidden">
                     <img
-                      src={product.image}
+                      src={getImageUrl(product.image)}
                       alt={product.name}
                       className="max-h-36 w-auto object-contain drop-shadow-md group-hover:scale-110 group-hover:-rotate-2 transition-transform duration-500 ease-out"
                     />

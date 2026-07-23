@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
             </p>
           </div>
 
-          <form onSubmit={(e) => { e.preventDefault(); alert('🎉 Thank you for subscribing to Marcado Daily newsletter!'); }} className="w-full md:w-auto flex items-center bg-white rounded-full p-1.5 shadow-lg max-w-md">
+          <form onSubmit={(e) => { e.preventDefault(); alert('🎉 Thank you for subscribing to Mercado Daily newsletter!'); }} className="w-full md:w-auto flex items-center bg-white rounded-full p-1.5 shadow-lg max-w-md">
             <Mail className="w-5 h-5 text-gray-400 ml-3" />
             <input
               type="email"
@@ -93,7 +93,7 @@ export const Footer: React.FC = () => {
 
         {/* Copyright & Payment Badges */}
         <div className="pt-8 border-t border-[#2C6B4B] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-emerald-300">
-          <p>© 2026 Marcado Daily Organic Market. Recreated with Pixar 3D Cartoon Aesthetic.</p>
+          <p>© 2026 Mercado Daily Organic Market. Recreated with Pixar 3D Cartoon Aesthetic.</p>
           <div className="flex items-center gap-3 font-bold text-white">
             <span className="bg-[#2C6B4B] px-3 py-1 rounded-md text-[10px]">VISA</span>
             <span className="bg-[#2C6B4B] px-3 py-1 rounded-md text-[10px]">MASTERCARD</span>

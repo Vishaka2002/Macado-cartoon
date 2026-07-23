@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Product } from '../data/products';
 import { X, Trash2, ShoppingBag, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 import confetti from 'canvas-confetti';
 
 
@@ -46,7 +47,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
       spread: 70,
       origin: { y: 0.6 }
     });
-    alert('🎉 Order Placed Successfully! Your Marcado Daily 3D Cartoon Groceries will arrive tomorrow!');
+    alert('🎉 Order Placed Successfully! Your Mercado Daily 3D Cartoon Groceries will arrive tomorrow!');
     onClearCart();
     onClose();
   };
@@ -118,7 +119,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   className="flex items-center gap-4 p-3 bg-white rounded-2xl border border-gray-100 shadow-xs hover:border-emerald-200 transition"
                 >
                   <img
-                    src={item.product.image}
+                    src={getImageUrl(item.product.image)}
                     alt={item.product.name}
                     className="w-16 h-16 object-contain bg-[#F8FAF5] rounded-xl p-1"
                   />

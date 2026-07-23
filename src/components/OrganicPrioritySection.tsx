@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 
 interface OrganicPrioritySectionProps {
@@ -68,7 +69,7 @@ export const OrganicPrioritySection: React.FC<OrganicPrioritySectionProps> = ({ 
             }}
           >
             <img
-              src="/images/farmer_organic_1784806531560.png"
+              src={getImageUrl('/images/farmer_organic_1784806531560.png')}
               alt="3D Pixar Cartoon Organic Farmer"
               className="w-full h-auto drop-shadow-2xl animate-float-gentle"
             />

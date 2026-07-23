@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, Phone } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 const InstagramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -42,7 +43,7 @@ export const InstagramGalleryFooter: React.FC = () => {
               className={`relative h-40 ${item.bg} flex items-center justify-center overflow-hidden group cursor-pointer`}
             >
               <img
-                src={item.image}
+                src={getImageUrl(item.image)}
                 alt={item.title}
                 className="max-h-28 w-auto object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-500"
               />

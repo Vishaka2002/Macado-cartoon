@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 interface NextDayDeliveryBannerProps {
   onReadMore?: () => void;
@@ -36,7 +37,7 @@ export const NextDayDeliveryBanner: React.FC<NextDayDeliveryBannerProps> = ({ on
             }}
           >
             <img
-              src="/images/scooter_delivery_cream_1784806550315.png"
+              src={getImageUrl('/images/scooter_delivery_cream_1784806550315.png')}
               alt="3D Pixar Scooter Delivery Rider"
               className="w-full h-auto drop-shadow-2xl animate-float-gentle group-hover:scale-105 transition-transform duration-500"
             />

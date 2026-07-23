@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import type { Product } from '../data/products';
 import { X, Star, ShoppingCart, Heart, ShieldCheck, Truck, RefreshCw } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 
 interface QuickViewModalProps {
@@ -57,7 +58,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
               ))}
             </div>
             <img
-              src={product.image}
+              src={getImageUrl(product.image)}
               alt={product.name}
               className="max-h-60 w-auto object-contain drop-shadow-xl animate-float-gentle"
             />

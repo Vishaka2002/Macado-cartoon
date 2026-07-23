@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Sparkles, Leaf } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 interface DoubleHeroProps {
   onShopNow: (category?: string) => void;
@@ -76,7 +77,7 @@ export const DoubleHero: React.FC<DoubleHeroProps> = ({ onShopNow }) => {
             }}
           >
             <img
-              src="/images/hero_veggies_crate_1784805543395.png"
+              src={getImageUrl('/images/hero_veggies_crate_1784805543395.png')}
               alt="Tasty Cartoon Vegetables Crate"
               className="w-full h-auto drop-shadow-2xl object-contain animate-float-gentle"
             />
@@ -128,7 +129,7 @@ export const DoubleHero: React.FC<DoubleHeroProps> = ({ onShopNow }) => {
             }}
           >
             <img
-              src="/images/hero_fruits_crate_1784805559805.png"
+              src={getImageUrl('/images/hero_fruits_crate_1784805559805.png')}
               alt="Delicious Cartoon Fruits Crate"
               className="w-full h-auto drop-shadow-2xl object-contain animate-float-gentle"
             />

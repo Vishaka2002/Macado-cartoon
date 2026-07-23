@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Clock, ShieldCheck, Zap } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 interface DeliveryBannerProps {
   onShopNow: () => void;
@@ -40,7 +41,7 @@ export const DeliveryBanner: React.FC<DeliveryBannerProps> = ({ onShopNow }) => 
             }}
           >
             <img
-              src="/images/delivery_rider_1784805589107.png"
+              src={getImageUrl('/images/delivery_rider_1784805589107.png')}
               alt="3D Pixar Cartoon Delivery Rider"
               className="w-full h-auto drop-shadow-2xl animate-float-gentle"
             />

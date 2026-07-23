@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Product } from '../data/products';
 import { X, Heart, ShoppingBag, Trash2 } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 
 interface WishlistDrawerProps {
@@ -65,7 +66,7 @@ export const WishlistDrawer: React.FC<WishlistDrawerProps> = ({
                   className="flex items-center gap-4 p-3 bg-white rounded-2xl border border-gray-100 shadow-xs hover:border-emerald-200 transition"
                 >
                   <img
-                    src={product.image}
+                    src={getImageUrl(product.image)}
                     alt={product.name}
                     className="w-16 h-16 object-contain bg-[#F8FAF5] rounded-xl p-1"
                   />
