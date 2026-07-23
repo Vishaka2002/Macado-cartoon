@@ -47,7 +47,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
       spread: 70,
       origin: { y: 0.6 }
     });
-    alert('🎉 Order Placed Successfully! Your Mercado Daily 3D Cartoon Groceries will arrive tomorrow!');
+    alert('🎉 Order Placed Successfully! Your Mercado 3D Cartoon Groceries will arrive tomorrow!');
     onClearCart();
     onClose();
   };

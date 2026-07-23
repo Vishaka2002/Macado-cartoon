@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Phone } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { getImageUrl } from '../utils/imageUtils';
 
 const InstagramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
@@ -66,7 +66,7 @@ export const InstagramGalleryFooter: React.FC = () => {
               <InstagramIcon className="w-4 h-4" />
             </div>
             <span className="text-sm font-extrabold text-[#16352D] tracking-tight">
-              mercado_daily
+              mercado_shop
             </span>
           </a>
         </div>
@@ -78,16 +78,20 @@ export const InstagramGalleryFooter: React.FC = () => {
           {/* Left Column: Brand & Story */}
           <div className="md:col-span-5 space-y-5">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#F76B5D] to-[#F6B86E] rounded-2xl flex items-center justify-center shadow-md">
-                <Sparkles className="w-5 h-5 text-white" />
+              <div className="bg-white/95 p-1 rounded-2xl shadow-md flex items-center justify-center border border-white/20">
+                <img 
+                  src={getImageUrl('/logo.png')} 
+                  alt="Mercado Logo" 
+                  className="h-8 w-auto object-contain" 
+                />
               </div>
               <span className="text-2xl font-black text-white">
-                Mercado <span className="text-[#F6B86E]">Daily</span>
+                Mercado
               </span>
             </div>
 
             <p className="text-emerald-100/75 text-xs sm:text-sm leading-relaxed max-w-md">
-              We're Mercado Daily Shop, an innovative team of food engineers. Our unique model minimizes fresh food handling by up to 85%, sourcing locally and dispatching within 6 hours through cold-chain logistics in eco-friendly containers.
+              We're Mercado Shop, an innovative team of food engineers. Our unique model minimizes fresh food handling by up to 85%, sourcing locally and dispatching within 6 hours through cold-chain logistics in eco-friendly containers.
             </p>
 
             {/* Social Icons */}
@@ -107,7 +111,7 @@ export const InstagramGalleryFooter: React.FC = () => {
             </div>
 
             <p className="text-[11px] text-emerald-200/60 font-semibold pt-4">
-              © 2026 Mercado Daily Organic Grocery Store. All rights reserved.
+              © 2026 Mercado Organic Grocery Store. All rights reserved.
             </p>
           </div>
 

@@ -8,9 +8,9 @@ import {
   Mail, 
   Phone, 
   Truck,
-  Sparkles,
   X
 } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 interface HeaderProps {
   cartCount: number;
@@ -85,9 +85,9 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Right contact details */}
           <div className="flex items-center gap-4 text-emerald-200">
-            <a href="mailto:info@mercado-daily.com" className="flex items-center gap-1.5 hover:text-white transition">
+            <a href="mailto:info@mercado.com" className="flex items-center gap-1.5 hover:text-white transition">
               <Mail className="w-3.5 h-3.5 text-emerald-400" />
-              <span className="hidden sm:inline">info@mercado-daily.com</span>
+              <span className="hidden sm:inline">info@mercado.com</span>
             </a>
             <a href="tel:+1900777525" className="flex items-center gap-1.5 hover:text-white transition">
               <Phone className="w-3.5 h-3.5 text-emerald-400" />
@@ -100,13 +100,20 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex items-center justify-between gap-4">
         {/* Logo */}
-        <div className="flex items-center gap-3 cursor-pointer group">
-          <div className="w-11 h-11 bg-gradient-to-br from-[#F76B5D] to-[#F6B86E] rounded-2xl flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-300">
-            <Sparkles className="w-6 h-6 text-white animate-spin-slow" />
+        <div 
+          onClick={() => onSelectCategory('Shop')}
+          className="flex items-center gap-3 cursor-pointer group"
+        >
+          <div className="bg-white/95 p-1.5 rounded-2xl shadow-md group-hover:scale-105 transition-transform duration-300 flex items-center justify-center border border-white/20">
+            <img 
+              src={getImageUrl('/logo.png')} 
+              alt="Mercado Logo" 
+              className="h-9 sm:h-10 w-auto object-contain" 
+            />
           </div>
           <div>
-            <div className="text-2xl font-black tracking-tight text-white flex items-center gap-1">
-              Mercado <span className="text-[#F6B86E]">Daily</span>
+            <div className="text-2xl sm:text-3xl font-black tracking-tight text-white flex items-center gap-1">
+              Mercado
             </div>
             <div className="text-[10px] tracking-widest uppercase text-emerald-300 font-bold">
               3D Cartoon Organic Market

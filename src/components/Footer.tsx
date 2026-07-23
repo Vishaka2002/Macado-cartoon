@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, Mail, Send, Heart, ShieldCheck, Truck } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 export const Footer: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ export const Footer: React.FC = () => {
             </p>
           </div>
 
-          <form onSubmit={(e) => { e.preventDefault(); alert('🎉 Thank you for subscribing to Mercado Daily newsletter!'); }} className="w-full md:w-auto flex items-center bg-white rounded-full p-1.5 shadow-lg max-w-md">
+          <form onSubmit={(e) => { e.preventDefault(); alert('🎉 Thank you for subscribing to Mercado newsletter!'); }} className="w-full md:w-auto flex items-center bg-white rounded-full p-1.5 shadow-lg max-w-md">
             <Mail className="w-5 h-5 text-gray-400 ml-3" />
             <input
               type="email"
@@ -39,10 +40,14 @@ export const Footer: React.FC = () => {
           {/* Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#F76B5D] to-[#F6B86E] rounded-xl flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-white" />
+              <div className="bg-white/95 p-1 rounded-xl shadow-md flex items-center justify-center border border-white/20">
+                <img 
+                  src={getImageUrl('/logo.png')} 
+                  alt="Mercado Logo" 
+                  className="h-8 w-auto object-contain" 
+                />
               </div>
-              <span className="text-xl font-black text-white">Mercado <span className="text-[#F6B86E]">Daily</span></span>
+              <span className="text-xl font-black text-white">Mercado</span>
             </div>
             <p className="text-emerald-200/80 leading-relaxed">
               Your premium 3D cartoon organic grocery store bringing farm-fresh vegetables, juicy fruits, bakery, and meats straight to your home with love.
@@ -93,7 +98,7 @@ export const Footer: React.FC = () => {
 
         {/* Copyright & Payment Badges */}
         <div className="pt-8 border-t border-[#2C6B4B] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-emerald-300">
-          <p>© 2026 Mercado Daily Organic Market. Recreated with Pixar 3D Cartoon Aesthetic.</p>
+          <p>© 2026 Mercado Organic Market. Recreated with Pixar 3D Cartoon Aesthetic.</p>
           <div className="flex items-center gap-3 font-bold text-white">
             <span className="bg-[#2C6B4B] px-3 py-1 rounded-md text-[10px]">VISA</span>
             <span className="bg-[#2C6B4B] px-3 py-1 rounded-md text-[10px]">MASTERCARD</span>
